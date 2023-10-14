@@ -1,0 +1,176 @@
+html 
+{
+box-sizing: border-box;
+font-size: 16px;
+}
+
+*, *:before, *:after 
+{
+box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul 
+{
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+ol, ul {   list-style: none; }
+
+img {   max-width: 100%;
+       height: auto; }
+
+/* header styles */
+header{
+    height:70px;
+}
+
+header a{display: inline-block;}
+
+#nav{float: right;}
+
+#main-header{
+    background-color: #86BBD8;
+    color: black ;
+    padding-top: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+   
+}
+
+
+#hero{
+    height: 50vh;
+    padding: 50px;
+    padding: 20px;
+    text-align: center;
+}
+
+#column1{
+    float:left;
+    width: 100%;
+    padding:30px 30px;
+    box-sizing:border-box;
+    /* justify-content:space-around; */
+    }
+
+
+#column2{
+    float:right;
+    width: 100%;
+    padding: 30px 30px;     
+    box-sizing:border-box;
+    /* justify-content:space-around; */
+    }
+
+    .button-wrap{
+        display: inline-block;
+    }
+
+/* might delete later */
+    .button {
+    display:block;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 1px solid red;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px; 
+    }
+
+
+    .button1 {border-radius: 70%;
+        background-color: #FFE2C8;
+    }
+    .button2 {border-radius: 70%;
+        background-color: #FDACAC;
+    }
+    .button3 {border-radius: 70%;
+        background-color: #F08080;}
+
+
+        
+    
+
+#main-footer{
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;        
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #86BBD8;
+    color: black ;    
+}   
+      
+
+              
+    
+
+ 
+
+
+/* @media only screen and (max-width: 600px) {
+.column{
+    flex-direction: row;
+    width: 100%;
+}
+}
+
+.columns {
+display:flex;
+flex-direction:column;
+} */
+
+
+@media (min-width: 769px) {
+header{
+    height: 70px;
+}
+
+nav{
+    float:right;
+}
+
+#hero{
+    padding: 50px;
+    height: 50vh;
+}
+
+#header-text {
+    width:60%
+}
+    
+     
+#column1{width:50%;}
+
+#column2{width:50%;
+}
+
+
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+
+/* nothing special here */
+    /* .column {
+        display:flex;
+        flex-direction:column;
+    } */
+       
+          
+    /* .column {
+    flex: 33.33%;
+    padding: 5px;
+    } */
+
+         
+        

@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boney Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap">
 </head>
 <boby>
 <header id="main-header">
@@ -19,16 +21,46 @@
     </header>
 
     <main>
+        <div>
+            <h2>Lets get in touch</h2>
+        </div>
+        <section class="my-form">
+            <form action="https://formspree.io/f/xbjvqzol" method="POST">             
+               
+               <div class="form-group">
+               <label for="yourname">First Name</label>
+               <input type="text" id="yourname" name="yourname" placeholder="Your name.." >
+               </div> 
 
-        
+               <div class="form-group">
+               <label for="mail">Email</label>
+               <input type="email" id="mail" name="email" placeholder="Your Email..">
+               </div>
+   
+               <div class="form-group">
+               <label for="subject">Subject</label>
+               <textarea id="subject" name="subject" placeholder="Writesomething..."></textarea>
+               </div>
+
+               <div class"submit-button">
+               <input type="submit" value="Submit">
+               </div>
+            </form>
+        </section>
+                 
     </main>
 
 
-<footer id="main-footer">
-    <div>
-        <p> Copyright &copy;Boney_Davis_2023 </p>
-    </div>
-</footer>
+    <footer id="main-footer">
+        <div>
+            <p> Copyright &copy;Boney_Davis_2023 </p>
+        </div>
+        <ul class="social-icons">
+            <li><a href="https://www.linkedin.com/in/boneydavis/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://github.com/boneycd/" target="_blank"><i class="fab fa-github"></i></a></li>
+            
+          </ul>
+    </footer>
  </body>
  </html>
 </boby>

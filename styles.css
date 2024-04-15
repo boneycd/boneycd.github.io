@@ -22,7 +22,9 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul
 }
 ol, ul {   list-style: none; }
 
-img {   max-width: 100%;
+
+
+img {   max-width: 70%;
        height: auto; }
 
 h1{
@@ -65,35 +67,63 @@ header{
 
 header a{display: inline-block;
         font-size: 16px;
-        /* font-weight: 500; */
+        font-weight: 500;
         
     }
 
 
-#nav{float: right;  
-   }
+
+#nav{
+    float: right;
+    justify-content: space-between; 
+    }
+
+.nav-item {
+    text-decoration: none;
+    font-weight: 700;
+    color: #551A8B ;
+    text-size-adjust: auto;
+    padding: 0 5px 0 5px;
+    
+    }
+
+.button-item {
+    text-decoration: none;
+    color: #551A8B ;
+    text-size-adjust: auto;   
+    }
 
 #main-header{
     background-color: #86BBD8;
     color: black ;
     padding-top: 50px;
-    padding-left: 10px;
+    padding-left: 5px;
     padding-right: 10px;
-   
-}
+ }
 
+/* tHIS IS NEW  */
 
+#container {
+    width: 100%;
+    height: 100%;
+    /* padding: 2em;  */
+    box-sizing: border-box;
+    
+  }
 #hero{
     height: 50vh;
     padding: 50px;
     text-align: center;
-   }
+    margin-bottom: 75px;
+    min-height: 100vh;
+    }
 
 
 
 #column1{
     /* float:left; */
     width: 100%;
+    /* padding:30px 30px; */
     padding:30px 30px;
     box-sizing:border-box;
              
@@ -111,8 +141,10 @@ header a{display: inline-block;
     /*button styles  */
 
 .button-wrap{
-    display: inline-block;
-    padding: 10px;
+    /* display: inline-block; */
+    display: inline-flex;
+    /* padding: 10px; */
+    padding: 30px;
 }
 
 
@@ -123,16 +155,18 @@ header a{display: inline-block;
     height: 65px;
     width:65px;
     padding: 10px;
-    font-size:13px;
+    /* font-size:16px; */
     flex-direction: row;
     border: 1px solid whitesmoke;
     font-weight: bold;
     }
 
 
+
+
 .button1 {border-radius: 70%;
     background-color: #FFE2C8;
-}
+    }
 .button2 {border-radius: 70%;
     background-color: #FDACAC;
 }
@@ -143,18 +177,20 @@ header a{display: inline-block;
         
     /*footer styles  */
 
-#main-footer{
-    /* text-align: center; */
-    float:left;
-    padding: 20px;
-    margin-top: 40px;        
+
+ 
+#main-footer {
     position: fixed;
-    left: 0;
-    bottom: 0;
+    height: 10%;
+    height: 60px; /* Height of the footer */
     width: 100%;
-    background-color: #86BBD8;
-    color: black ;    
-}   
+    padding-top: 2px;
+    bottom: 0;
+    clear: both;
+    background-color:#86BBD8;
+    color: black;
+    overflow: auto;
+  }
  
 footer ul {
     list-style: none;
@@ -173,6 +209,8 @@ footer li {
     padding-left:0;
     margin-bottom:0;
     /* margin-top: 3%; */
+    font-weight: 700;
+    color: #551A8B ;
     list-style:none
   }
 
@@ -203,6 +241,7 @@ width:50%}
    color:#fff;
    padding:10px 15px;
    border:none;
+   /* float: right; */
 }
 
 input[type=submit]:hover {
@@ -219,12 +258,25 @@ input[type=submit]:hover {
 }
 
 .column-work{
-    width: 50%;
+    /* width: 50%; */
+    width: 29%;
     min-height: 250px;
     object-fit: contain;
     border: 1px solid green;
     margin: 2em auto;
     /* align-content: center; */
+}
+
+.column-work img {
+    width: auto; /* Reset width to auto */
+    height: auto; /* Reset height to auto */
+    /* width:100%; */
+    max-width:100%;
+    object-fit: contain;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
 }
 
 .work-button {
@@ -242,8 +294,25 @@ input[type=submit]:hover {
     align-items: center;
 }
 
+.container {
+    width: 100%;
+    height: 100%;
+    padding: 2em; /* Adjust as needed */
+    box-sizing: border-box;
+}
+
+.class {
+    height: 70px;
+}
+
+.about {
+ max-width: 1000px;
+ margin:auto;
+ 
+}
 
 @media (min-width: 769px) {
+
 header{
     height: 70px;
 }
@@ -253,14 +322,16 @@ nav{
 }
 
 #hero{
-    padding: 50px;
+    padding:0%;
     height: 50vh;
-}
+    min-height: 100%;    
+    }
 
+    
 #header-text {
     width:60%
 }
-    
+
 
 #column1{width: 33%; }      
    
@@ -275,13 +346,14 @@ nav{
     height: 100px;
     width: 100px;
     padding: 20px;
-    font-size:13px;
+    font-size:16px;
     flex-direction: row;
     border: 1px solid whitesmoke;
     }
    
 
-.button-wrap{padding: 50px;}
+.button-wrap{padding: 10px;}
+
 
 .column-work{
      width: 29%;}
